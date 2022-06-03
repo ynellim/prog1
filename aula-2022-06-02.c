@@ -1,4 +1,4 @@
-* ALGORITMO: primeiramente comecei incluindo a biblioteca, denominei minha função principal e declarei minhas variaveis,
+/* ALGORITMO: primeiramente comecei incluindo a biblioteca, denominei minha função principal e declarei minhas variaveis,
  usei o for para criar o meu looping semanal que é pedido no problema, usei o printff + scanf para o meu codigo interagir com o usuario e armazenar os valores digitados
  após isso usei a variavel saldo para representar minha conta feita para calcular esse fluxo de caixa.
 E, por fim usei minha estrutura de decisão para imprimir o resultado e finalizar a questão. */
