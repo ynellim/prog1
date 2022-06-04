@@ -1,7 +1,31 @@
-/* ALGORITMO: primeiramente comecei incluindo a biblioteca, denominei minha função principal e declarei minhas variaveis,
- usei o for para criar o meu looping semanal que é pedido no problema, usei o printff + scanf para o meu codigo interagir com o usuario e armazenar os valores digitados
- após isso usei a variavel saldo para representar minha conta feita para calcular esse fluxo de caixa.
-E, por fim usei minha estrutura de decisão para imprimir o resultado e finalizar a questão. */
+/*
+
+ variaveis: 
+   reais: entrada, saida, saldoinicial, saldo
+ inicio:
+   para i=0 até 5, faça:
+     perguntar o saldo inicial
+     ler o saldo inicial em "saldoinicial'
+     perguntar o valor de entrada
+     ler o valor de entrada em "entrada"
+     perguntar o valor de saída
+     ler o valor de saída em "saida"
+  saldo = saldoinicial + entrada - saida
+     se saldo for maior que 2000:
+     imprimir o valor total recebido "entrada"
+     imprimir o valor total pagamentos "saida"
+     imprimir o valor positivo atual "saldo"
+     
+    
+  então se for menor de 500:
+     imprimir o valor total recebido "entrada"
+     imprimir o valor total pagamentos "saida"
+     imprimir o valor negativo atual "saldo"
+     
+  senão 
+   imprimir error
+     
+*/
 
 
 
@@ -12,12 +36,14 @@ void main()
 {
 
  int i;
- float entrada, saida, saldoinicial, saldo;                    /* saldo inicial = saldo que se inicia o dia
+ float entrada, soma_entrada, saida, saldoinicial, saldo;                    /* saldo inicial = saldo que se inicia o dia
+ float soma_entrada = 0, soma_saida = 0;
 
                                                                 entrada = Os valores de entrada são as vendas que você lança dia a dia
                                                                 Saída = Os valores de saída representam as suas despesas
                                                                 Saldo = valor que você possui no final do dia, depois que suas entradas e saídas foram lançadas */
-   for(i=0; i<5; i++) {
+ 
+ for(i=0; i<5; i++) {
 
     printf("\n\nOla senhor Inacio! irei calcular seu FLUXO DE CAIXA.\n\n");
 
@@ -26,13 +52,18 @@ void main()
 
   printf("Por favor digite o valor de sua entrada:\n");
    scanf("%f", &entrada);
-
+  
+ soma_entrada = soma_entrada + entrada;
+  
   printf("Por favor digite os valores que representa a saida:\n");
    scanf("%f", &saida);
+  
+ soma_saida = soma_saida + entrada; 
+
 
 }
 
-  saldo = (saldoinicial + entrada - saida);
+  saldo = (soma_entrada + soma_saida);
 
    if(saldo > 2000) {
 
