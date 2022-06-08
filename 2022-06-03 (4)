@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+  void main ()
+
+  {
+
+  int a=4, b=9, c=5, d=5, opcao=1, opcao1 = 2;
+
+
+     setlocale(LC_ALL, "Portuguese");
+
+
+   printf("Por favor escolha uma opção:\n");
+     printf("1 - A , 2 - B:\n");
+      scanf("%d", &opcao);
+      scanf("%d", &opcao1);
+
+
+     if (opcao ==  1)
+        {
+
+
+        printf("Seu número é: 24\n");
+    }
+
+  else if (opcao1 == 2)
+    {
+
+     printf("Seu número é: 30\n");
+
+    }
+
+
+ else
+
+ {
+
+    printf("\n\nERROR\n\n");
+
+  }
+
+    printf("A soma dos inteiros a e b: %d\n", a+b);
+
+    printf("A produto de 5: %d\n", c*d);
+
+
+    printf("Caractere digitado: %d\n", opcao1, opcao);
+
+
+
+  }
