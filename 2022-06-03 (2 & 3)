@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+  void main ()
+
+  {
+
+  int meuNumero = 50, numero = 15;
+  char meuCaractere = 'D' ;
+  float meuDecimal = 1.3;
+
+
+
+    printf("%d\n", meuNumero);
+
+    printf("%d\n", numero);
+
+    printf("%c\n", meuCaractere);
+
+    printf("%.2f\n", meuDecimal);
+
+    printf(" %d - %d\n", meuNumero, numero);
+
+    printf("%d - %c\n", numero, meuCaractere);
+
+    printf("%c - %.2f\n", meuCaractere, meuDecimal);
+
+    printf(" %d - %d - %c - %.2f\n", meuNumero, numero, meuCaractere, meuDecimal);
+
+
+
+  }
