@@ -42,7 +42,7 @@
 
   }
 
-    printf("A soma dos inteiros a e b: %d\n", a+b);
+    printf("A soma dos inteiros a (%d) e b (%d): %d\n",a,b a+b);
 
     printf("A produto de 5: %d\n", c*d);
 
