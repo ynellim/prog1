@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void main ()
+{
+
+int x = 50, y = 10, w= 20, z=20;
+
+
+
+
+    if (x > y)
+        {
+    printf("x e maior que y\n");
+}
+
+ else
+     {
+
+   printf("x e menor que y\n");
+ }
+
+
+  if (w >= z) {
+
+    printf("w: %d e maior ou igual a z: %d\n", w,z);
+    }
+
+  else {
+    printf("x é menor que y\n");
+}
+
+
+}
+
