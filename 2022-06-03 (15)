@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>   //codigo corrigo e implementado
+                      
+
+void main ()                           
+{
+
+int idade;
+char nome[30];
+float peso;
+
+
+
+   printf("Por favor, digite sua idade:\n");
+     scanf("%d", &idade);
+
+   printf("Agora, digite seu nome:\n");
+     scanf("%s", &nome);
+
+   printf("Por fim, digite seu peso:\n");
+     scanf("%f", &peso);
+
+
+     printf("Sua idade: %d\n",idade);
+     printf("Sua nome: %s\n",nome);
+     printf("Sua peso: %f\n", peso);
+
+
+}
+
