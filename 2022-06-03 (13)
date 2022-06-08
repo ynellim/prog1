@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void main ()
+{
+
+int aux=0;
+
+   printf("Entre com um valor inteiro:\n ");
+      scanf("%d", &aux);
+
+  if (aux >= 20 && aux < 40) {
+
+    printf("O valor digitado está entre 20 e 40\n");
+
+    }
+
+
+  else if (aux >= 40 && aux < 60 ) {
+
+    printf("O valor digitado e 40 ou menor que 60\n");
+}
+
+
+  else if (aux >= 60 && aux > 60) {
+
+    printf("O valor digitado e 60 ou maior que 60\n");
+}
+
+  else {
+    printf("O valor digitado e 20 ou menor que 20\n");
+
+
+
+}
+}
