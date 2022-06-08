@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>                  //acima de mim só Deus e os helicópteros da polícia
+
+
+                                              /* fiz esse código com o intuito de calcular a idade no usuario em 2050 cuja os cientistas alertam
+                                               que a terra será uma grande estufa e com recursos naturais minimos*/
+
+
+  int main ()
+
+  {
+
+
+ int idade, ano;
+
+setlocale(LC_ALL, "Portuguese");
+
+
+   printf("\n\nHELLO WORLD!\n\n");
+   printf("\n\n Você sabia que até em 2050 o aquecimento global pode ocasionar mudanças irreversíveis para a terra?\n\n");
+   printf("\n\nPor isso vamos calcular sua idade em 2050\n\n");
+
+   printf("Por favor, digite seu ano de nascimento:\n");
+      scanf("%d", &ano);
+
+
+         idade = (2050-ano);
+
+
+   printf("Sua idade vai ser: %d \n", idade);
+
+
+   system("pause");
+
+   return 0;
+
+
+  }
