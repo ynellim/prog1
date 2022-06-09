@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main()
+
+ {                        
+                     //fazer um codigo em switch e dizer se é vogal ou consoante. 
+
+char vogal;
+
+ 
+ 
+   printf("Digite uma letra e vamos verificar se e vogal ou consoante:\n");
+     scanf("%c", &vogal);
+     
+     
+   switch(vogal)
+   {
+   
+   case 'a':
+   case 'e':
+   case 'i':
+   case 'o':
+   case 'u':
+	printf("sua vogal\n");
+    break;
+    
+    default:
+	    printf("voce digitou uma consoante\n");
+    
+   }  
+ 
+ 
+ return 0;
+}
