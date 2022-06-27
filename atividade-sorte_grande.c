@@ -70,4 +70,5 @@ int main()
                 printf("Você errou!!\n");
         }
     }
+    return 0;
 }
