@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int n, cont=0;
+
+        do
+        {
+          printf("Digite um numero:\n");
+           scanf("%d", &n);
+          if(n >= 100 && n<=200)
+                cont++;
+                }
+        while ( n != 0);
+
+         printf("A quantidade de numeros entre 100 a 200 e de: %d", cont);
+
+
+return 0;
+}
