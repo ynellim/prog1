@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i;
+    float salario;
+    char nome[20];
+
+
+    //entrada de dados.
+    printf("Por favor, digite seu nome:\n");
+     scanf("%s", &nome);
+    printf("Por favor, digite seu salario:\n");
+     scanf("%f", &salario);
+
+    //itineração.
+    for(i=0; i<=5; i++) {
+       if(salario < 1300){
+            printf("ISENTO\n");
+        }
+       else if(salario >= 1300 && salario < 2300){
+            printf("%s , seu salario liquido e de: %2.f", nome, salario - salario*0.1 );
+       }
+       else {
+           printf("%s , seu salario liquido e de: %2.f",nome, salario - salario*0.15 );
+
+}
+return 0;
+}
+}
