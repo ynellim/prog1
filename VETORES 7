@@ -1,0 +1,23 @@
+//Faça um programa com um vetor de 20 números inteiros. Depois, imprima todos seus números em ordem reversa.
+
+#include <stdio.h>
+
+int main(){
+
+int i,j, vet[20];
+
+    for(i=1;i<=20; i++){
+        scanf("%d", &vet[i]);
+    }
+
+    for(j=4;j>=20; j--){
+
+         printf("...%d\t", vet[j]);
+
+    }
+
+return 0;
+}
+
+
+
