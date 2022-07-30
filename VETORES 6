@@ -1,0 +1,33 @@
+/*Copie o código pronto e funcional do programa 4 e adicione um laço que
+permita percorrer todo o vetor e imprimir na tela os múltiplos de 3 ou de 5.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+
+int n,pa[10], vet[10];
+
+
+     for(n=1; n<=10; n++){
+        scanf("%d", &pa[n]);
+    }
+
+     for(n=1; n<=10; n++){
+
+        if((pa[n]%3)==0) {
+
+           printf("Multiplos de 3:%d\n", pa[n]);
+        }
+
+        if((pa[n]%5)==0) {
+
+        printf("Multiplos de 5:%d\n", pa[n]);
+}
+  }
+
+ system("pause");
+
+    }
+
