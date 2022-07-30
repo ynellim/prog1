@@ -1,0 +1,19 @@
+//Crie um vetor de 30 posições e preencha com valores de 1 a 30. Depois, imprima seus valores na tela.
+
+#include <stdio.h>
+
+int main(){
+
+int i, vet[30];
+
+
+    for(i=1;i<=30; i++){
+      scanf("%d", &vet[i]);
+
+   }
+
+    for(i=1;i<=30; i++){
+        printf("seus valores: %d\n", vet[i]);
+    }
+system("pause");
+}
