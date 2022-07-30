@@ -1,0 +1,41 @@
+/* Copie o código pronto e funcional do programa 4 e adicione uma pesquisa por um número no vetor.
+Seu programa deve pedir um número ao usuário e, então,pesquisá-lo no vetor.
+Se encontrar, deve imprimir qual é o índice que o número desejado está.
+ Caso contrário, deve imprimir “número não encontrado”.*/
+
+
+ #include <stdio.h>
+ #include <stdlib.h>
+
+int main () {
+
+
+int n, aux=0;
+float pa[10], vet[10];
+
+
+   printf("Por favor, preencha o vetor:\n");
+    for(n=1; n<=10; n++){
+       scanf("%f", &pa[n]);
+   }
+
+   for(n=1; n<=10; n++){
+   printf("Pesquise o numero desejado:\n");
+
+         scanf("%f",&vet[n]);
+
+      if(vet[n] != pa[n]){
+
+        printf("Numero nao encontrado\n");
+        aux++;
+
+     }else {
+
+       printf("indice %d numero: %d\n",n, aux);
+     }
+
+  }
+system("pause");
+
+}
+
