@@ -1,0 +1,25 @@
+//Crie um vetor de 20 posições e preencha com múltiplos de 2, sendo cada posição com valor 2*seu índice.
+
+
+#include <stdio.h>
+
+int main(){
+
+int i, vet[10];
+
+
+    for(i=1;i<=10; i++){
+      scanf("%d", &vet[i]);
+
+   }
+
+   for(i=1;i<=10; i++){
+
+    if((vet[i]%2)==0){
+      printf("indice %d e multiplos de 2: %d\n",2*i, vet[i]);
+    }
+    }
+system("pause");
+}
+
+
