@@ -1,0 +1,29 @@
+/*Crie um vetor, de forma automática, com a seguinte
+P.A.: 2n+1, onde n = índice do vetor.
+Ele deve ser do tipo float e ter 100 posições.
+Após isso, imprima os 10 primeiros valores do vetor na tela.*/
+
+
+#include <stdio.h>
+
+int main () {
+
+
+int n;
+float pa[10], vet[10];
+
+
+    for(n=1; n<=10; n++){
+       scanf("%f", &pa[n]);
+   }
+
+    for(n=1; n<=10; n++){
+
+    pa[n] = (2*n)+1;
+
+     printf("sua PA %2.f\n", pa[n]);
+    }
+
+ system("pause");
+
+    }
