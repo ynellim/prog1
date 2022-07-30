@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+int i, j, situacao[3];
+float prova1[3], prova2[4], media[3];
+
+
+
+     for(i=0; i<3; i++){
+       printf("Por favor digite a nota da P1:\n");
+        scanf("%f", &prova1[i]);
+     }
+
+     for(j=0; j<3; j++){
+        printf("Por favor digite a nota da P2:\n");
+         scanf("%f", &prova2[j]);
+    }
+
+      if(media[i] >= 7.0){
+            situacao[i]= 1;
+     }else{
+            situacao[i]= 0;
+    }
+
+      for(i=0; i<3; i++){
+        for(j=0; j<3; j++){
+
+          media[i] = (prova1[i]+prova2[j])/2;
+
+           if(situacao[i] == 1){
+               printf("-> APROVADO\n");
+
+
+       }else{
+              printf("-> REPROVADO\n");
+       }
+
+
+          printf("medias: %2.f\t\t", media[i]);
+      }
+    }
+
+return 0;
+}
