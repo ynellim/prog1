@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+                                    //quando é *p = eleacessa o que esá dentro da memoria (mochila), o p = apenas aponta para o endereço
+int *p,*i, *soma;
+
+     p = malloc(sizeof(int));
+
+     i = malloc(sizeof(int));
+
+     soma = malloc(sizeof(int));
+
+
+    printf("Por favor, digite o numero para:\n");
+        scanf("%d", p);
+
+
+    printf("Por favor, digite o numero para i:\n");
+        scanf("%d", i);
+
+
+            *soma = *p + *i;
+
+     printf("valor de *soma: %d\n", *soma);
+
+system("pause");
+
+}
