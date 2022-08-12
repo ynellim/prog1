@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void main(){
+
+char vet[10]={'m','i','l','l','e','n','y'};
+
+char * pos = vet;
+while(*pos!=0)
+    printf("%c", *pos++);
+printf("\n");
+
+
+}
