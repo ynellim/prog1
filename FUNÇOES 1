@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+
+ float perimetroRet(float base, float altura){
+
+
+   return 2*(base+altura);
+
+}
+
+
+ float areaRet(float base, float altura){
+
+   return (base*altura);
+
+}
+
+float diagonalRet(float base, float altura){
+
+   float aux = (base * base) + (altura * altura);
+   aux = sqrt(aux);
+
+   return aux;
+
+
+}
+
+
+void main() {
+   float base, altura, perimetro, area, diagonal;
+
+
+  printf("digite a base do retangulo:\n");
+  scanf("%f", &base);
+
+
+  printf("digite a altura do retangulo:\n");
+  scanf("%f", &altura);
+
+
+  perimetro = perimetroRet(base, altura);
+  area =  areaRet(base, altura);
+  diagonal = diagonalRet(base, altura);
+
+
+  printf("perimetro do retangulo: %f\n", perimetro);
+  printf("area do retangulo: %f\n", area);
+  printf("diagonal do retangulo: %f\n", diagonal);
+
+
+
+ }
