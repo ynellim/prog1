@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct aluno {
+
+float p1,p2,p3;
+char nome[20];
+long int matricula;
+
+};
+
+typedef struct aluno Dados;
+
+void main() {
+Dados dado[5];
+int i, imaior=0;
+float media,  maiormedia=0;
+
+    for(i=0;i<5;i++){
+       printf("Digite seu nome:\n");
+       scanf("%s",&dado[i].nome);
+       printf("Digite sua matricula:\n");
+       scanf("%d",&dado[i].matricula);
+       printf("Nota da P1:\n");
+       scanf("%f",&dado[i].p1);
+       printf("Nota da P2:\n");
+       scanf("%f",&dado[i].p2);
+       printf("Nota da P3:\n");
+       scanf("%f",&dado[i].p3);
+
+        media = (dado[i].p1+ dado[i].p2+ dado[i].p3)/3;
+            if(media>maiormedia){
+            maiormedia=media;
+            imaior=i;
+
+            }
+
+}
+
+    printf("nome:%s\n", dado[imaior].nome);
+    printf("matricula:%d\n", dado[imaior].matricula);
+    printf("Nota 1:%f\n", dado[imaior].p1);
+    printf("Nota 2:%f\n", dado[imaior].p2);
+    printf("Nota 3:%f\n", dado[imaior].p3);
+    printf("media:%d",maiormedia);
+
+
+}
