@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>                  
+
+struct dados{
+
+
+int idade;
+char nome[20];
+char endereco[100];
+
+};
+
+void main() {
+
+ struct dados usuario;
+
+
+    printf("Digite seu nome:\n");
+    scanf("%s",&usuario.nome);
+    printf("Digite sua idade:\n");
+    scanf("%d",&usuario.idade);
+    printf("Digite seu endereco:\n");
+    scanf("%s",&usuario.endereco);
+
+    printf("Seu nome: %s\n", usuario.nome);
+    printf("Sua idade: %d\n", usuario.idade);
+    printf("Seu endereco: %s\n", usuario.endereco);
+}
+
+
