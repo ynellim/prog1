@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+struct coordenadas {
+
+float x;
+float y;
+
+};
+
+void main(){
+struct coordenadas ponto;
+float resultado;
+
+
+    printf("Digite o ponto x:\n");
+    scanf("%f",&ponto.x);
+    printf("Digite o ponto y:\n");
+    scanf("%f",&ponto.y);
+
+    resultado = sqrt(pow(ponto.x-0, 2)+ pow(ponto.y-0, 2));
+
+    printf("Distancia: %f\n", resultado);
+
+}
