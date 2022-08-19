@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main(){
+   int i, j,m[10][10], qnt_impar[10] = {0,0};
+
+
+
+   printf("Por favor, digite os elementos da matriz:\n");
+    for(i=0; i<2; i++)
+   {
+       for(j=0;j<10;j++)
+       {
+           printf("  acessando a coluna %d.\n", j);
+           scanf("%d", &m[i][j]);
+       }
+   }
+
+   for(i=0; i<2; i++)
+   {
+       printf("Acessando a linha %d...\n", i);
+       for(j=0;j<2;j++)
+       {
+           printf("acessando a coluna %d.\n", j);
+
+           if( m[i][j]%2 == 1 )
+           {
+               qnt_impar[i]++;
+               qnt_impar[j]++;
+           }
+       }
+   }
+    for(i=0; i<2; i++)
+   for(j=0; j<2; j++)
+       printf("A soma dos impares da matriz: %d\n", qnt_impar[i]+qnt_impar[j]);
+
+   return 0;
+}
